@@ -6,7 +6,7 @@
   <b>This is AgentGo's MCP server. The browser lives in the main repo.</b><br>
   <a href="https://github.com/Moha2005269/agentgo">⭐ Star AgentGo</a> &nbsp;·&nbsp;
   <a href="https://github.com/Moha2005269/agentgo/releases/latest">⬇ Download for Windows 11</a> &nbsp;·&nbsp;
-  <a href="https://github.com/Moha2005269/agentgo/blob/main/docs/benchmarks/agentgo-0.1.5.md">Benchmark</a>
+  <a href="https://github.com/Moha2005269/agentgo/blob/main/docs/benchmarks/agentgo-0.1.6.md">Benchmark</a>
 </p>
 
 # agentgo-mcp
@@ -19,9 +19,10 @@ AgentGo is a real Chromium browser for Windows 11, built for agents. This reposi
 - **Only what changed.** `browser_act` and `browser_batch` use real mouse and keyboard input, wait for the page to settle, and reply with the diff, not the whole page again.
 - **The human stays in charge.** Payments and final submissions come back as `approval.required`; the agent calls `browser_wait_human` and you approve in the browser.
 - **Accounts without tokens.** `browser_account` calls the APIs of accounts you linked, without the agent ever holding a token.
+- **Built for single-page apps.** Repeated buttons say which row they belong to, a reference that a re-render moved to another item heals or fails loudly instead of clicking the wrong row, `browser_act {action: "scroll", until}` scrolls a long or virtual list in one call, `browser_wait` takes named conditions (`enabled`, `gone`, `text`), and any action can say what must happen (`expect`).
 - **GoMini.** When the on-device model is on, `browser_delegate` hands it routine steps.
 
-On 24 BrowserGym MiniWoB++ tasks with the same model, AgentGo solved 22, browser-use 19 and Playwright MCP 18 ([method and results](https://github.com/Moha2005269/agentgo/blob/main/docs/benchmarks/agentgo-0.1.5.md)).
+On 24 BrowserGym MiniWoB++ tasks with the same model, AgentGo solved 22, browser-use 19 and Playwright MCP 18 ([method and results](https://github.com/Moha2005269/agentgo/blob/main/docs/benchmarks/agentgo-0.1.5.md)). AgentGo 0.1.6 against 0.1.5 on 38 tasks including 14 single-page apps: wrong actions 6 to 0 with GoMini, 16% fewer input tokens per solved task and 14% fewer turns without it ([0.1.6 results](https://github.com/Moha2005269/agentgo/blob/main/docs/benchmarks/agentgo-0.1.6.md)).
 
 ## Tools
 
@@ -37,7 +38,7 @@ Install AgentGo from the [latest release](https://github.com/Moha2005269/agentgo
 /plugin install agentgo --marketplace Moha2005269/agentgo-mcp
 ```
 
-**Claude Desktop:** open [`agentgo-mcp-0.1.5.mcpb`](https://github.com/Moha2005269/agentgo-mcp/releases/latest) to install it as an extension.
+**Claude Desktop:** open [`agentgo-mcp-0.1.6.mcpb`](https://github.com/Moha2005269/agentgo-mcp/releases/latest) to install it as an extension.
 
 **MCP Registry:** listed as `io.github.Moha2005269/agentgo`.
 
