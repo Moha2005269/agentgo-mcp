@@ -31,6 +31,16 @@ On 24 BrowserGym MiniWoB++ tasks with the same model, AgentGo solved 22, browser
 
 Install AgentGo from the [latest release](https://github.com/Moha2005269/agentgo/releases/latest). Its installer connects Claude Code, Codex or Droid for you, using `agentgo mcp`.
 
+**Claude Code plugin:** the server and the agent guide in one step.
+
+```
+/plugin install agentgo --marketplace Moha2005269/agentgo-mcp
+```
+
+**Claude Desktop:** open [`agentgo-mcp-0.1.5.mcpb`](https://github.com/Moha2005269/agentgo-mcp/releases/latest) to install it as an extension.
+
+**MCP Registry:** listed as `io.github.Moha2005269/agentgo`.
+
 To run this server from source instead:
 
 ```bash

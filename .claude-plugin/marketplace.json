@@ -1,0 +1,14 @@
+{
+  "name": "agentgo",
+  "owner": {
+    "name": "Mhmad hassn Alhmood"
+  },
+  "plugins": [
+    {
+      "name": "agentgo",
+      "source": "./",
+      "description": "Drive AgentGo, a real Chromium browser for AI agents on Windows 11: compact page outlines, diff-only replies, real input, and you approve payments."
+    }
+  ],
+  "description": "AgentGo, the browser your AI agent drives"
+}

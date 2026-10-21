@@ -1,0 +1,20 @@
+{
+  "name": "agentgo",
+  "displayName": "AgentGo",
+  "description": "Drive AgentGo, a real Chromium browser for AI agents on Windows 11: compact page outlines, diff-only replies, real input, and you approve payments.",
+  "version": "0.1.5",
+  "author": {
+    "name": "Mhmad hassn Alhmood",
+    "url": "https://github.com/Moha2005269"
+  },
+  "homepage": "https://github.com/Moha2005269/agentgo",
+  "repository": "https://github.com/Moha2005269/agentgo-mcp",
+  "license": "MIT",
+  "keywords": [
+    "browser",
+    "browser-automation",
+    "mcp",
+    "chromium",
+    "web"
+  ]
+}
