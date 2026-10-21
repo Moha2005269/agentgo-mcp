@@ -1,0 +1,23 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.Moha2005269/agentgo",
+  "title": "AgentGo",
+  "description": "Real Chromium browser for AI agents: compact page outlines, diff-only replies, real input, human approval.",
+  "repository": {
+    "url": "https://github.com/Moha2005269/agentgo-mcp",
+    "source": "github"
+  },
+  "websiteUrl": "https://github.com/Moha2005269/agentgo",
+  "version": "0.1.5",
+  "packages": [
+    {
+      "registryType": "mcpb",
+      "identifier": "https://github.com/Moha2005269/agentgo-mcp/releases/download/v0.1.5/agentgo-mcp-0.1.5.mcpb",
+      "version": "0.1.5",
+      "fileSha256": "8868bc26e8519b414b29e346eef0fb01e1b3e054b60311e74a6b2a295c537f63",
+      "transport": {
+        "type": "stdio"
+      }
+    }
+  ]
+}
