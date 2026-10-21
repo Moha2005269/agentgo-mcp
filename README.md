@@ -57,6 +57,10 @@ Then point your MCP client at `target/release/agentgo-mcp`. It attaches to the n
 
 `agentgo-mcp-offline` builds on any OS and answers `initialize` and `tools/list` with the real tool list, with no browser behind it. Tool calls explain where to get AgentGo. It exists so MCP directories can check the server; the `Dockerfile` builds it.
 
+## Data
+
+AgentGo is a browser, so the pages your agent opens and the forms it submits go to those websites, as they would from any browser. Nothing goes to us: no telemetry, no accounts, and your profile (history, cookies, saved sign-ins) stays on your computer. Payments and final submissions wait for your approval. See [PRIVACY.md](PRIVACY.md) and the browser's [network calls](https://github.com/Moha2005269/agentgo/blob/main/docs/NETWORK_CALLS.md).
+
 ## Layout
 
 | Crate | What it is |
