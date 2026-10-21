@@ -1,0 +1,26 @@
+[workspace]
+resolver = "2"
+members = [
+    "crates/agentgo-protocol",
+    "crates/agentgo-policy",
+    "crates/agentgo-shell-bridge",
+    "crates/agentgo-mcp",
+]
+
+[workspace.package]
+version = "0.1.5"
+edition = "2021"
+rust-version = "1.85"
+license = "MIT"
+repository = "https://github.com/Moha2005269/agentgo-mcp"
+publish = false
+
+[workspace.dependencies]
+agentgo-mcp = { path = "crates/agentgo-mcp" }
+agentgo-policy = { path = "crates/agentgo-policy" }
+agentgo-protocol = { path = "crates/agentgo-protocol" }
+agentgo-shell-bridge = { path = "crates/agentgo-shell-bridge" }
+
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+thiserror = "2"
