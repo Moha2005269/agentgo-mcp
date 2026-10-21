@@ -1,3 +1,14 @@
+<p align="center">
+  <a href="https://github.com/Moha2005269/agentgo"><img src="https://raw.githubusercontent.com/Moha2005269/agentgo/main/assets/hero.svg" alt="AgentGo, the browser that fits you and your agent" width="100%"></a>
+</p>
+
+<p align="center">
+  <b>This is AgentGo's MCP server. The browser lives in the main repo.</b><br>
+  <a href="https://github.com/Moha2005269/agentgo">⭐ Star AgentGo</a> &nbsp;·&nbsp;
+  <a href="https://github.com/Moha2005269/agentgo/releases/latest">⬇ Download for Windows 11</a> &nbsp;·&nbsp;
+  <a href="https://github.com/Moha2005269/agentgo/blob/main/docs/benchmarks/agentgo-0.1.5.md">Benchmark</a>
+</p>
+
 # agentgo-mcp
 
 The MCP server for [AgentGo](https://github.com/Moha2005269/agentgo), the browser your AI agent drives. MIT licensed.
