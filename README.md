@@ -22,7 +22,7 @@ AgentGo is a real Chromium browser for Windows 11, built for agents. This reposi
 - **Built for single-page apps.** Repeated buttons say which row they belong to, a reference that a re-render moved to another item heals or fails loudly instead of clicking the wrong row, `browser_act {action: "scroll", until}` scrolls a long or virtual list in one call, `browser_wait` takes named conditions (`enabled`, `gone`, `text`), and any action can say what must happen (`expect`).
 - **GoMini.** When the on-device model is on, `browser_delegate` hands it routine steps.
 
-On 24 BrowserGym MiniWoB++ tasks with the same model, AgentGo solved 22, browser-use 19 and Playwright MCP 18 ([method and results](https://github.com/Moha2005269/agentgo/blob/main/docs/benchmarks/agentgo-0.1.5.md)). AgentGo 0.1.6 against 0.1.5 on 38 tasks including 14 single-page apps: wrong actions 6 to 0 with GoMini, 16% fewer input tokens per solved task and 14% fewer turns without it ([0.1.6 results](https://github.com/Moha2005269/agentgo/blob/main/docs/benchmarks/agentgo-0.1.6.md)).
+On 24 BrowserGym MiniWoB++ tasks with the same model, AgentGo solved 22, browser-use 19 and Playwright MCP 18 ([method and results](https://github.com/Moha2005269/agentgo/blob/main/docs/benchmarks/agentgo-0.1.5.md)). With 0.1.6, on 37 tasks including 14 single-page apps and all four browsers running at the same time: AgentGo with GoMini v6 solved 37, AgentGo 37, browser-use 35 and Playwright MCP 31, with AgentGo using 95-114k input tokens per task against 227-306k ([0.1.6 results](https://github.com/Moha2005269/agentgo/blob/main/docs/benchmarks/agentgo-0.1.6.md)).
 
 ## Tools
 
